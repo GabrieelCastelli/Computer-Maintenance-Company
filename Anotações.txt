@@ -1,0 +1,109 @@
+## HTML
+ 
+ *** Para realizar COMENTÁRIOS em HTML utiliza-se <!-- conteúdo do comentário --> ***
+
+ A principal estrutura para a montagem de uma página web é:
+
+    <!Doctype html>
+        
+    <html>
+        
+        <head>
+            <title></title>
+        </head>
+
+        <body>
+
+        </body>
+
+    </html>
+    
+    Obs: 
+        - Doctype -> Tipo do documento
+        - Head -> Cabeça
+        - Body -> Corpo
+
+ É possível definir atributos para as tags. Alguns como:
+    - charset="utf-8": Define que irá ter acentos dentro da página web
+
+ -> CABEÇALHO: Tags de cabeçalho são utilizadas para formatação de texto. Utilizadas para definir títulos, por exemplo.
+
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+
+ -> TAGS
+
+    Tag <br>: Quebra de linha
+    Tag <p></p>: Parágrafo
+    Tag <hr>: Cria uma linha horizontal
+    Tag <b></b>: Negrito
+    Tag <strong></strong>: Negrito (É recomendado que use <strong> ao invés de <b>)
+    Tag <i></i>: Itálico
+    Tag <em></em>: Itálico (É recomendado que use <em> ao invés de <i>)
+    Tag <u></u>: Underline (Sublinhado)
+    Tag <strike></strike>: Risca o texto no meio
+
+ -> LISTAS ORDENADA E NÃO ORDENADA: 
+ 
+    Não ordenada: <ul type="">            ---> Type são os tipos de marcadores que a lista vai ter (circle, square ou disc)
+                      <li> </li> (para cada item da lista)
+                  </ul>
+    Ordenada: <ol type="">                ---> (1, A, a, I ou i)
+                  <li> </li> (para cada item da lista)
+               </ol>
+
+ -> IMAGENS
+
+    <img src="imagens/(nome da imagem).jpg"> (Como a imagen está em uma pasta juntamente com o html, pode-se puxar diretamente)
+
+    <img src="https://www.computerti.com.br/imagens/servicos/motivos-fazer-manutencao-computadores.png"> (Exemplo puxando o link direto do Google)
+ 
+    <img src="" width="200" height="" (width regula a largura da imagem e height regula a altura)
+
+ -> LINKS
+
+    <a href="">Clique aqui</a> (Para redirecionar para links)
+
+    Obs: Caso o link seja de uma página do google, coloque-o na href, caso seja para abrir um outro arquivo .html, coloque o arquivo na href
+
+ -> TABELAS
+    
+    <table border="" width="">   -> border = borda / widht = largura / height = altura / align = posição
+        <tr> 
+            <th> </th>  -> th para títulos e td para conteúdos
+        </tr>
+
+        <tr> 
+            <td> </td> 
+            <td colspan=""> </td> -> Extende a coluna (Mesclar células)
+            <td rowspan=""> </td> -> Extende a linha (Mesclar células)
+        </tr>
+    </table> 
+
+    Obs: É possível colocar imagens e links dentro de uma tabela
+
+ -> FORMULÁRIOS
+    
+    <form>
+        <input type="" name="">   -> Type = Tipo de texto de entrada (text, password, radio, checkbox)
+        <input type="button" value="">   -> Type = button quando colocar um botão, "value" é o texto que aparecerá no botão
+        <input type="submit" value="">   -> Type = submit para enviar o formulário ao clicar no botão
+        <input type="radio" value="">   -> Para saber o valor que foi passado, é necessário o atributo value
+        <input type="checkbox" value="">   -> Checkbox serve para caixa de marcação
+        <select> 
+            <option value=""> MG </option>
+            <option value=""> SP </option>
+            <option value=""> RJ </option>
+        </select>                          -> Para listagem
+
+        <textarea> </textarea>   -> Colocar caixa de texto
+    </form>
+
+ -> CARACTERES ESPECIAIS
+
+    Para acessar caracteres especiais, vá ao link: https://www.w3schools.com/html/html_entities.asp
+
